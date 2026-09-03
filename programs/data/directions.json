@@ -1,0 +1,233 @@
+{
+  "schemaVersion": 1,
+  "directions": [
+    {
+      "slug": "agronomiya",
+      "title": "Агрономия"
+    },
+    {
+      "slug": "arkheologiya",
+      "title": "Археология"
+    },
+    {
+      "slug": "bibliotechnoe-delo",
+      "title": "Библиотечное дело"
+    },
+    {
+      "slug": "bukhgalterskoe-delo",
+      "title": "Бухгалтерское дело"
+    },
+    {
+      "slug": "gosudarstvennye-zakupki",
+      "title": "Государственные закупки"
+    },
+    {
+      "slug": "gumanitarnye-nauki",
+      "title": "Гуманитарные науки"
+    },
+    {
+      "slug": "dizajn",
+      "title": "Дизайн"
+    },
+    {
+      "slug": "zhurnalistika",
+      "title": "Журналистика"
+    },
+    {
+      "slug": "zemleustrojstvo-i-kadastr",
+      "title": "Землеустройство и кадастр"
+    },
+    {
+      "slug": "izdatelskoe-delo",
+      "title": "Издательское дело"
+    },
+    {
+      "slug": "imidzh-i-stil",
+      "title": "Имидж и стиль"
+    },
+    {
+      "slug": "informatsionnye-tekhnologii",
+      "title": "Информационные технологии"
+    },
+    {
+      "slug": "iskusstvovedenie",
+      "title": "Искусствоведение"
+    },
+    {
+      "slug": "kulturologiya",
+      "title": "Культурология"
+    },
+    {
+      "slug": "laboratorii",
+      "title": "Лаборатории"
+    },
+    {
+      "slug": "logistika",
+      "title": "Логистика"
+    },
+    {
+      "slug": "logopediya",
+      "title": "Логопедия"
+    },
+    {
+      "slug": "marketing",
+      "title": "Маркетинг"
+    },
+    {
+      "slug": "markshejderskoe-delo",
+      "title": "Маркшейдерское дело"
+    },
+    {
+      "slug": "mashinostroenie",
+      "title": "Машиностроение"
+    },
+    {
+      "slug": "menedzhment",
+      "title": "Менеджмент"
+    },
+    {
+      "slug": "menedzhment-v-razlichnykh-sferakh",
+      "title": "Менеджмент в различных сферах"
+    },
+    {
+      "slug": "metallurgiya",
+      "title": "Металлургия"
+    },
+    {
+      "slug": "metrologiya",
+      "title": "Метрология"
+    },
+    {
+      "slug": "muzejnoe-delo",
+      "title": "Музейное дело"
+    },
+    {
+      "slug": "neftegazovoe-delo",
+      "title": "Нефтегазовое дело"
+    },
+    {
+      "slug": "okhrana-i-bezopasnost-truda",
+      "title": "Охрана и безопасность труда"
+    },
+    {
+      "slug": "pedagogika",
+      "title": "Педагогика"
+    },
+    {
+      "slug": "pedagogika-professionalnogo-obrazovaniya",
+      "title": "Педагогика профессионального образования"
+    },
+    {
+      "slug": "podemnye-sooruzheniya-i-lifty",
+      "title": "Подъёмные сооружения и лифты"
+    },
+    {
+      "slug": "pozharno-tekhnicheskij-minimum",
+      "title": "Пожарно-технический минимум"
+    },
+    {
+      "slug": "politologiya",
+      "title": "Политология"
+    },
+    {
+      "slug": "predmetnaya-podgotovka-uchitelej",
+      "title": "Предметная подготовка учителей"
+    },
+    {
+      "slug": "proektirovanie",
+      "title": "Проектирование"
+    },
+    {
+      "slug": "rezhissura",
+      "title": "Режиссура"
+    },
+    {
+      "slug": "reklama-i-pr",
+      "title": "Реклама и PR"
+    },
+    {
+      "slug": "sistemy-kommunikatsij",
+      "title": "Системы коммуникаций"
+    },
+    {
+      "slug": "smetnoe-delo",
+      "title": "Сметное дело"
+    },
+    {
+      "slug": "sotsialnaya-rabota",
+      "title": "Социальная работа"
+    },
+    {
+      "slug": "sport-i-fitnes",
+      "title": "Спорт и фитнес"
+    },
+    {
+      "slug": "stroitelstvo",
+      "title": "Строительство"
+    },
+    {
+      "slug": "sudebnaya-ekspertiza",
+      "title": "Судебная экспертиза"
+    },
+    {
+      "slug": "teploenergetika",
+      "title": "Теплоэнергетика"
+    },
+    {
+      "slug": "transport-bdd",
+      "title": "Транспорт и БДД"
+    },
+    {
+      "slug": "turizm",
+      "title": "Туризм"
+    },
+    {
+      "slug": "kholodilnoe-oborudovanie",
+      "title": "Холодильное оборудование"
+    },
+    {
+      "slug": "ekologicheskaya-bezopasnost",
+      "title": "Экологическая безопасность"
+    },
+    {
+      "slug": "ekonomika-i-finansy",
+      "title": "Экономика и финансы"
+    },
+    {
+      "slug": "ekspertiza-i-otsenka",
+      "title": "Экспертиза и оценка"
+    },
+    {
+      "slug": "ekspluatatsiya",
+      "title": "Эксплуатация"
+    },
+    {
+      "slug": "elektroenergetika",
+      "title": "Электроэнергетика"
+    },
+    {
+      "slug": "yurisprudentsiya",
+      "title": "Юриспруденция"
+    },
+    {
+      "slug": "medicina",
+      "title": "Медицина"
+    },
+    {
+      "slug": "psihologiya",
+      "title": "Психология"
+    },
+    {
+      "slug": "korporativnoe-obuchenie",
+      "title": "Корпоративное обучение"
+    },
+    {
+      "slug": "rabochie-specialnosti",
+      "title": "Рабочие специальности"
+    },
+    {
+      "slug": "obshchie-napravleniya",
+      "title": "Другие профессиональные направления"
+    }
+  ]
+}

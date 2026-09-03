@@ -1,0 +1,26 @@
+{
+  "name": "niippk-program-catalog",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Автономный каталог программ профессиональной переподготовки и повышения квалификации",
+  "exports": {
+    ".": "./src/index.js",
+    "./styles.css": "./src/styles/program-catalog.css",
+    "./data/professional-retraining.json": "./data/professional-retraining.json",
+    "./data/advanced-training.json": "./data/advanced-training.json",
+    "./data/directions.json": "./data/directions.json"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "sync:data": "node scripts/sync-data.mjs"
+  },
+  "devDependencies": {
+    "vite": "^6.3.5"
+  },
+  "dependencies": {
+    "dpeo": "file:.."
+  }
+}
