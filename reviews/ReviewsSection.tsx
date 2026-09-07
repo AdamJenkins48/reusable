@@ -111,6 +111,7 @@ function Avatar({ review, avatarTemplate }: { review: Review; avatarTemplate: st
 
 function ReviewDetails({ review, data }: { review: Review; data: ReviewsData }) {
   const source = data.sources[review.s];
+  const meta = [formatDate(review.d), source?.city, source?.title].filter(Boolean).join(" • ");
 
   return (
     <>
@@ -121,9 +122,7 @@ function ReviewDetails({ review, data }: { review: Review; data: ReviewsData }) 
           <Stars rating={review.r} />
         </div>
       </div>
-      <p className={styles.date}>
-        {formatDate(review.d)}{source?.city ? ` • ${source.city}` : ""}
-      </p>
+      <p className={styles.date}>{meta}</p>
     </>
   );
 }
@@ -219,8 +218,8 @@ function getPageSize() {
 export function ReviewsSection({
   colors,
   data = yandexReviews,
-  title = "Более 280 положительных отзывов клиентов",
-  subtitle = "Оценки выпускников на основе отзывов в Яндекс Картах",
+  title = "Отзывы о НИИПППК",
+  subtitle = "Оригинальные отзывы с Яндекс Карт и 2ГИС",
   mapSource,
   shuffle = true,
   className = "",
@@ -273,7 +272,8 @@ export function ReviewsSection({
   const votes = sources.reduce((total, source) => total + source.votes, 0);
   const weightedRating = sources.reduce((total, source) => total + source.rating * source.votes, 0);
   const rating = votes ? weightedRating / votes : 0;
-  const sourceLink = (mapSource ? data.sources[mapSource] : undefined) ?? sources[0];
+  const selectedSource = mapSource ? data.sources[mapSource] : undefined;
+  const sourceLinks = mapSource ? (selectedSource ? [selectedSource] : []) : sources;
   const firstVisible = reviews.length ? safePage * pageSize + 1 : 0;
   const lastVisible = Math.min(firstVisible + pageSize - 1, reviews.length);
 
@@ -298,13 +298,17 @@ export function ReviewsSection({
                 <span className={styles.scoreCaption}>{votes} оценок</span>
               </span>
             </div>
-            {sourceLink?.url ? (
-              <a className={styles.mapLink} href={sourceLink.url} target="_blank" rel="noopener nofollow">
-                <Icon className={styles.pinIcon}>
-                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z" />
-                </Icon>
-                Смотреть на Яндекс Картах
-              </a>
+            {sourceLinks.length ? (
+              <div className={styles.sourceLinks}>
+                {sourceLinks.map((source) => (
+                  <a key={source.url} className={styles.mapLink} href={source.url} target="_blank" rel="noopener nofollow">
+                    <Icon className={styles.pinIcon}>
+                      <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z" />
+                    </Icon>
+                    {source.linkText ?? `Смотреть: ${source.title}`}
+                  </a>
+                ))}
+              </div>
             ) : null}
           </div>
         </div>
@@ -330,7 +334,7 @@ export function ReviewsSection({
               <div className={styles.cards}>
                 {visibleReviews.map((review) => (
                   <ReviewCard
-                    key={`${review.s}-${review.n}-${review.d}`}
+                    key={review.id ?? `${review.s}-${review.n}-${review.d}`}
                     review={review}
                     data={data}
                     onOpen={setSelectedReview}

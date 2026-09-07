@@ -46,9 +46,15 @@
 .score,
 .stars,
 .mapLink,
+.sourceLinks,
 .controls {
   display: flex;
   align-items: center;
+}
+
+.sourceLinks {
+  flex-wrap: wrap;
+  gap: 12px;
 }
 
 .summary {

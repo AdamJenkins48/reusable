@@ -4,9 +4,11 @@ export interface ReviewSource {
   rating: number;
   votes: number;
   url: string;
+  linkText?: string;
 }
 
 export interface Review {
+  id?: string;
   s: string;
   n: string;
   l: number;
