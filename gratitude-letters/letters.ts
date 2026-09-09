@@ -2,6 +2,17 @@ import type { GratitudeLetterItem } from "./types";
 
 export const defaultGratitudeLetters: readonly GratitudeLetterItem[] = [
   {
+    id: "serafim",
+    organization: "АНО «Детский православный приют «Серафим»",
+    excerpt:
+      "Приют подтверждает партнерство с ООО «Научно-инновационный институт профессиональной переподготовки и повышения квалификации» и поддержку его деятельности ежемесячными пожертвованиями.",
+    date: "11.03.2025",
+    dateTime: "2025-03-11",
+    image: new URL("./assets/gratitude-letter-serafim.webp", import.meta.url).href,
+    width: 725,
+    height: 1024,
+  },
+  {
     id: "medis",
     organization: "ООО «Клиника «МЭДИС»",
     excerpt:
